@@ -8,6 +8,7 @@ COPY . /RackHD/on-core/
 
 RUN cd /RackHD/on-core \
   && npm install \
-  && npm prune --production
+  && npm prune --production \
+  && npm install --production
 
 VOLUME /opt/monorail
