@@ -1,8 +1,8 @@
-# Copyright 2016, EMC, Inc. 
+# Copyright 2016, EMC, Inc.
 ARG repo=nodesource
-ARG tag=4.4.6
+ARG tag=8.10.0
 
-FROM ${repo}/wheezy:${tag}
+FROM ${repo}:${tag}
 
 COPY . /RackHD/on-core/
 
