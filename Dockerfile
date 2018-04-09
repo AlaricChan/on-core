@@ -1,6 +1,6 @@
 # Copyright 2016, EMC, Inc.
-ARG repo=nodesource
-ARG tag=8.10.0
+ARG repo=node
+ARG tag=8.11.1
 
 FROM ${repo}:${tag}
 
