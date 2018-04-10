@@ -1,8 +1,10 @@
 # Copyright 2016, EMC, Inc.
 ARG repo=node
-ARG tag=8.11.1
+ARG tag=6.13.0
 
 FROM ${repo}:${tag}
+
+RUN npm install -g npm@5.7.1
 
 COPY . /RackHD/on-core/
 
